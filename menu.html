@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | SamgyupTa Silay</title>
+  <meta name="description" content="SamgyupTa menu: Unli Samgyupsal ₱349, Unli Chicken Wings ₱249, samgyupsal sets from ₱599, Korean mains, wings, snacks and drinks.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">메뉴 · Menu</span>
+        <h1>The Menu</h1>
+        <p>Go unli at the grill or order Korean favorites ala carte. Prices are in pesos and may change without notice.</p>
+      </div>
+    </section>
+
+    <nav class="menu-nav" aria-label="Menu sections">
+      <div class="container">
+        <ul>
+          <li><a href="#unli">Unli Sets</a></li>
+          <li><a href="#included">House Rules</a></li>
+          <li><a href="#ala-carte-section">Sets & Ala Carte</a></li>
+          <li><a href="#drinks-section">Drinks</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section menu-section" id="unli">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Unli sets</span>
+          <h2>Grill all you can</h2>
+          <p class="muted">Priced per person. No time limit.</p>
+        </div>
+        <div class="grid grid-3" id="sets"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt menu-section" id="included">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Before you grill</span>
+          <h2>House rules</h2>
+        </div>
+        <div class="grid grid-3" id="house-rules"></div>
+        <p class="note reveal">Senior Citizen and PWD discounts apply as required by law. Prices may change without prior notice.</p>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="ala-carte-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sets & ala carte</span>
+          <h2>Korean favorites</h2>
+          <p class="muted">Sharing sets, Korean mains, wings and snacks. Many are available for take-out too.</p>
+        </div>
+        <div id="ala-carte"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt menu-section" id="drinks-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Drinks</span>
+          <h2>Something to sip</h2>
+        </div>
+        <div class="menu-list reveal" id="drinks"></div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container reveal">
+        <h2>Hungry na?</h2>
+        <div class="btn-row">
+          <a class="btn btn--fire" href="reserve.html">Reserve a Table</a>
+          <a class="btn btn--ghost" data-href="phone" href="#">Call Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="data/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

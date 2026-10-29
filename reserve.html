@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve a Table | SamgyupTa Silay</title>
+  <meta name="description" content="Reserve a table at SamgyupTa Korean BBQ in Silay City. Send your booking via Messenger, SMS or call.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reserve">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">예약 · Reservations</span>
+        <h1>Reserve a table</h1>
+        <p>Fill in the details and send them to us through Messenger or SMS. Walk-ins are always welcome too!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:780px">
+        <form class="card form-card" id="reserve-form" novalidate>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="name">Your name</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Juan Dela Cruz" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <select id="time" name="time" required></select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="pax">Party size</label>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="Fewer people">−</button>
+                <input id="pax" name="pax" type="number" inputmode="numeric" min="1" max="30" value="4" required>
+                <button type="button" data-step="1" aria-label="More people">+</button>
+              </div>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="set">Preferred set</label>
+              <select id="set" name="set"></select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="contact">Mobile number <span class="muted">(optional)</span></label>
+              <input id="contact" name="contact" type="tel" autocomplete="tel" placeholder="09XX XXX XXXX">
+              <span class="field-error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="notes">Notes <span class="muted">(optional)</span></label>
+              <textarea id="notes" name="notes" placeholder="Birthday celebration, bringing a cake, need a high chair…"></textarea>
+            </div>
+            <div class="field field--full">
+              <button class="btn btn--fire" type="submit">Prepare my reservation</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="card form-card result" id="reserve-result" style="margin-top:24px;scroll-margin-top:90px">
+          <span class="eyebrow">Almost done!</span>
+          <h2>Send this to us</h2>
+          <p class="muted">Your reservation is confirmed once SamgyupTa replies.</p>
+          <pre></pre>
+          <div class="btn-row">
+            <a class="btn btn--fire" id="send-messenger" data-href="messenger" href="#" target="_blank" rel="noopener">💬 Copy & open Messenger</a>
+            <a class="btn btn--ghost" id="send-sms" href="#">✉️ Send via SMS</a>
+            <a class="btn btn--ghost" id="send-call" href="#">📞 Call instead</a>
+          </div>
+          <p class="copied" id="copied" role="status"></p>
+        </div>
+
+        <p class="note">Big group (more than 30) or a private event? Call us at <a data-href="phone" href="#"><span data-info="phoneDisplay"></span></a>. Open daily <span data-hours></span>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="data/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

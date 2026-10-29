@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Us | SamgyupTa Silay</title>
+  <meta name="description" content="SamgyupTa location, opening hours and contact: J. Pitong Ledesma St., McKinley Bukid, Silay City. Open daily 11AM–9PM.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Find us</span>
+        <h1>Come grill with us</h1>
+        <p><span data-status></span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:stretch">
+          <div class="card form-card reveal">
+            <ul class="info-list">
+              <li><span class="info-icon">📍</span><div><strong>Address</strong><span data-info="address"></span><br><span class="muted" data-info="landmark"></span></div></li>
+              <li><span class="info-icon">📞</span><div><strong>Call or text</strong><a data-href="phone" href="#"><span data-info="phoneDisplay"></span></a> · Landline <span data-info="landline"></span></div></li>
+              <li><span class="info-icon">💬</span><div><strong>Message us</strong><a data-href="messenger" href="#" target="_blank" rel="noopener">Facebook Messenger</a> · <a data-href="facebook" href="#" target="_blank" rel="noopener">Facebook page</a></div></li>
+              <li><span class="info-icon">🚗</span><div><strong>Parking</strong><span class="muted">Limited parking near the restaurant.</span></div></li>
+            </ul>
+            <h3 style="margin-top:24px">Opening hours</h3>
+            <table class="hours-table"><tbody id="hours-table"></tbody></table>
+            <div class="btn-row" style="margin-top:24px">
+              <a class="btn btn--fire" data-href="mapsLink" href="#" target="_blank" rel="noopener">Get Directions</a>
+              <a class="btn btn--ghost" href="reserve.html">Reserve a Table</a>
+            </div>
+          </div>
+          <div class="reveal" style="display:flex;flex-direction:column;gap:16px">
+            <img src="images/storefront.jpg" alt="SamgyupTa's bamboo-fenced entrance on J. Pitong Ledesma St." style="border-radius:var(--radius);aspect-ratio:16/10;object-fit:cover;width:100%">
+            <iframe class="map-frame" id="map" title="Map showing SamgyupTa in Silay City" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="data/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
